@@ -1,8 +1,8 @@
 # GHA AWS OIDC Bootstrap
-[![GitHub Actions Workflow Status](https://github.com/PaulDuvall/gha-aws-oidc-bootstrap/actions/workflows/test.yaml/badge.svg)](https://github.com/PaulDuvall/gha-aws-oidc-bootstrap/actions/workflows/test.yaml)
+[![GitHub Actions Workflow Status](https://github.com/hideo0106/gha-aws-oidc-bootstrap/actions/workflows/test.yaml/badge.svg)](https://github.com/hideo0106/gha-aws-oidc-bootstrap/actions/workflows/test.yaml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Python](https://img.shields.io/badge/python-3.11-blue.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/PaulDuvall/gha-aws-oidc-bootstrap)
+![GitHub last commit](https://img.shields.io/github/last-commit/hideo0106/gha-aws-oidc-bootstrap)
 
 This project provides a secure, automated setup for AWS OIDC authentication with GitHub Actions.
 
@@ -19,7 +19,7 @@ This project provides a secure, automated setup for AWS OIDC authentication with
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/PaulDuvall/gha-aws-oidc-bootstrap.git
+git clone https://github.com/hideo0106/gha-aws-oidc-bootstrap.git
 cd gha-aws-oidc-bootstrap
 ```
 
@@ -86,7 +86,7 @@ Replace the ARN above with the value output by the script. Both approaches are a
 **Stack Naming Convention:**
 - The CloudFormation stack name is automatically generated to ensure uniqueness and compliance with AWS naming rules.
 - **Format:** `gha-aws-oidc-<org>-<repo>` (all lowercase, hyphens only, max 64 chars)
-- Example: For `PaulDuvall/gha-aws-oidc-bootstrap`, the stack name will be `gha-aws-oidc-paulduvall-gha-aws-oidc-bootstrap`
+- Example: For `hideo0106/gha-aws-oidc-bootstrap`, the stack name will be `gha-aws-oidc-hideo0106-gha-aws-oidc-bootstrap`
 - This stack name is used for all AWS resources deployed for this integration.
 - **Custom Stack Names:** You can override the default naming by providing `--stack-name <name>` when running the script:
   ```bash
